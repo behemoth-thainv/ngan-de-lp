@@ -251,14 +251,29 @@ main.active {
   top: 15%;
   right: 17%;
 }
+.menu_next {
+  margin-bottom: 0 !important;
+}
 .img-drinktea {
   width: 30%;
   position: absolute;
   top: 35%;
   right: 17%;
 }
+.menu-tiec {
+  margin-top: 30px !important;
+}
+.hot-left {
+  right: unset !important;
+  left: 0 !important;
+}
 .img-hot {
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 56px !important;
+  height: 30px !important;
+  position: absolute;
+  right: 0;
+  top: unset !important;
+  left: unset !important;
+  bottom: 10px !important;
   margin-left: 20px;
 }
