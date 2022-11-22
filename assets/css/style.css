@@ -106,7 +106,18 @@ main.active {
   overflow: hidden;
   margin-bottom: 12px;
 }
-
+.img_order_before {
+  width: 50px !important;
+  height: 20px !important;
+  position: absolute !important;
+  right: 5px!important;
+  top: 5px !important;
+  left: unset !important;
+}
+.note {
+  float: right;
+  margin-bottom: 5px;
+}
 .menu-featured .menu-item .item-image img {
   position: absolute;
   top: 0;

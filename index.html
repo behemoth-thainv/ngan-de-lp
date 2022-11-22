@@ -130,7 +130,11 @@
               <div class="item-price">180.000đ</div>
               <div class="item-image">
                 <img src="./assets/images/ngan_tai_chanh.png" />
-                <img class="img-hot" src="./assets/images/hot.svg" width="10%" />
+                <img
+                  class="img-hot"
+                  src="./assets/images/hot.svg"
+                  width="10%"
+                />
               </div>
               <div class="item-name">Ngan tái chanh <i>(Đặc biệt)</i></div>
             </div>
@@ -139,10 +143,11 @@
             src="./assets/images/danh_sach_ngan_dong_doi_C.svg"
             class="menu-detail menu_next"
           />
+          <img src="./assets/images/note.svg" alt="" width="35%" class="note" />
           <img
             src="./assets/images/danh_sach_next.svg"
             class="menu-detail"
-            width="60%"
+            width="100%"
           />
 
           <div class="menu-featured">
@@ -150,7 +155,11 @@
               <div class="item-price">385.000đ</div>
               <div class="item-image">
                 <img src="./assets/images/lau_ngu_uyen.png" />
-                <img class="img-hot" src="./assets/images/hot.svg" width="10%" />
+                <img
+                  class="img-hot"
+                  src="./assets/images/hot.svg"
+                  width="10%"
+                />
               </div>
               <div class="item-name">Lẩu ngan Ngự Uyển</div>
             </div>
@@ -158,7 +167,16 @@
               <div class="item-price">385.000đ</div>
               <div class="item-image">
                 <img src="./assets/images/lau_ngan_trung.jpg" />
-                <img class="img-hot" src="./assets/images/hot.svg" width="10%" />
+                <img
+                  src="./assets/images/order_before.svg"
+                  class="img_order_before"
+                  alt=""
+                />
+                <img
+                  class="img-hot"
+                  src="./assets/images/hot.svg"
+                  width="10%"
+                />
               </div>
               <div class="item-name">Lẩu ngan pate trứng muối</div>
             </div>
@@ -166,7 +184,11 @@
               <div class="item-price">385.000đ</div>
               <div class="item-image">
                 <img src="./assets/images/lau_ngan_kho.png" />
-                <img class="img-hot" src="./assets/images/hot.svg" width="10%" />
+                <img
+                  class="img-hot"
+                  src="./assets/images/hot.svg"
+                  width="10%"
+                />
               </div>
               <div class="item-name">Lẩu ngan khô Trùng Khánh</div>
             </div>
@@ -174,7 +196,16 @@
               <div class="item-price">395.000đ</div>
               <div class="item-image">
                 <img src="./assets/images/lau_rieu.png" />
-                <img class="img-hot" src="./assets/images/hot.svg" width="10%" />
+                <img
+                  src="./assets/images/order_before.svg"
+                  class="img_order_before"
+                  alt=""
+                />
+                <img
+                  class="img-hot"
+                  src="./assets/images/hot.svg"
+                  width="10%"
+                />
               </div>
               <div class="item-name">Lẩu riêu ngan gắp bò</div>
             </div>
@@ -371,52 +402,52 @@
         "DOMContentLoaded",
         () => switchMenu("food"),
         false
-      );
-      mybutton = document.getElementById("myBtn");
+      )
+      mybutton = document.getElementById("myBtn")
 
       window.onscroll = function () {
-        scrollFunction();
-      };
+        scrollFunction()
+      }
       function scrollFunction() {
         if (
           document.body.scrollTop > 20 ||
           document.documentElement.scrollTop > 20
         ) {
-          mybutton.style.display = "block";
+          mybutton.style.display = "block"
         } else {
-          mybutton.style.display = "none";
+          mybutton.style.display = "none"
         }
       }
       function topFunction() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" })
       }
       function switchMenu(menu) {
         Array.from(document.querySelectorAll("main")).forEach((item) =>
           item.classList.remove("active")
-        );
+        )
 
         Array.from(document.querySelectorAll("[data-menu]")).forEach((item) =>
           item.classList.remove("active")
-        );
+        )
 
-        document.getElementById(menu).classList.add("active");
+        document.getElementById(menu).classList.add("active")
 
-        document.querySelector(`[data-menu="${menu}"]`).classList.add("active");
+        document.querySelector(`[data-menu="${menu}"]`).classList.add("active")
       }
     </script>
 
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "G-SPS6NCXKDQ");
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "G-SPS6NCXKDQ")
     </script>
     <!-- End Google Tag Manager -->
 
